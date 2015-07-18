@@ -5,17 +5,17 @@ using System.Text;
 
 namespace LootTableEditor
 {
-    public class DropReplacement
-    {
+	public class DropReplacement
+	{
 		public Dictionary<State, List<Drop>> drops;
-        public bool tryEachItem = true;
-        public bool alsoDropDefaultLoot = false;
+		public bool tryEachItem = true;
+		public bool alsoDropDefaultLoot = false;
 
-        public DropReplacement()
-        {
+		public DropReplacement()
+		{
 			drops = new Dictionary<State, List<Drop>>();
-        }
-    }
+		}
+	}
 
 	public enum State
 	{
@@ -27,20 +27,20 @@ namespace LootTableEditor
 		Fullmoon
 	}
 
-    public class Drop
-    {
-        public float chance = 1.0f;
+	public class Drop
+	{
+		public float chance = 1.0f;
 
-        public int low_stack = 0;
-        public int high_stack = 1;
+		public int low_stack = 0;
+		public int high_stack = 1;
 
-        public int itemID;
+		public int itemID;
 
-        public int prefix;
+		public int prefix;
 
-        public Drop()
-        {
-            
-        }
-    }
+		public Drop()
+		{
+
+		}
+	}
 }
