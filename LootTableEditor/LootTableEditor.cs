@@ -77,7 +77,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 
 							args.Handled = true;
 
@@ -96,7 +96,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 
 							args.Handled = true;
 
@@ -115,7 +115,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 
 							args.Handled = true;
 
@@ -134,7 +134,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 
 							args.Handled = true;
 
@@ -153,7 +153,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 
 							args.Handled = true;
 
@@ -172,7 +172,7 @@ namespace LootTableEditor
 						{
 							var item = TShock.Utils.GetItemById(d.itemID);
 							int stack = random.Next(d.low_stack, d.high_stack + 1);
-							Item.NewItem(args.X, args.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
+							Item.NewItem((int)args.Position.X, (int)args.Position.Y, item.width, item.height, d.itemID, stack, args.Broadcast, d.prefix);
 							args.Handled = true;
 
 							if (!repl.tryEachItem)
