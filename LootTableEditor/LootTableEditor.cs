@@ -7,7 +7,7 @@ using TShockAPI.Hooks;
 
 namespace LootTableEditor
 {
-	[ApiVersion(1, 22)]
+	[ApiVersion(2, 0)]
 	public class LootTableEditor : TerrariaPlugin
 	{
 		private Config config;
@@ -29,7 +29,7 @@ namespace LootTableEditor
 
 		public override Version Version
 		{
-			get { return new Version(1, 1, 2); }
+			get { return new Version(1, 1, 3); }
 		}
 
 		public LootTableEditor(Main game)
