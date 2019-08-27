@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
+using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
 using TShockAPI.Hooks;
-using Terraria;
 
 namespace LootTableEditor
 {
-	[ApiVersion(1, 20)]
+	[ApiVersion(2, 0)]
 	public class LootTableEditor : TerrariaPlugin
 	{
 		private Config config;
@@ -30,7 +29,7 @@ namespace LootTableEditor
 
 		public override Version Version
 		{
-			get { return new Version(1, 1, 1); }
+			get { return new Version(1, 1, 3); }
 		}
 
 		public LootTableEditor(Main game)
